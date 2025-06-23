@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="poem-generator">
+    <div class="ai-generator">
         <header>
             <h1>
                 AI GENERATOR
             </h1>
         </header>
         <main>
-            <input type="text" placeholder="search for anything" autocomplete="off" id="poem-input" autofocus required/>
-            <br/>
-            <input type="text" placeholder="Give your instructions here.." autocomplete="off" id="poem-instructions" autofocus required/>
-            <input type="submit" value="Seach" id="poem-button"/>
+            <form>
+                <input type="text" placeholder="search for anything" autocomplete="off" id="ai-input" autofocus required/>
+                <br/>
+                <input type="text" placeholder="Give your instructions here.." autocomplete="off" id="ai-instructions" autofocus required/>
+                <input type="submit" value="Seach" id="ai-button"/>
+                <span class="info">i.e: flower, city, foods</span>
+            </form>
         </main>
-        <p id="poem-output" class="poem-sentence"></p>
+        <p id="ai-output" class="ai-sentence"></p>
         <footer>
             This code was coded by
-            <a href="#" target="_blank">Zusange Mbaleki</a>
+            <a href="https://github.com/sange371" target="_blank">Zusange Mbaleki</a>
             and is on
             <a href="#" target="_blank">Github</a>
             , also hosted on
             <a href="#" target="_blank">Netlify</a>
         </footer>
     </div>
+    <script src="javascript/functionality.js"></script>
 </body>
 </html>
